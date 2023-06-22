@@ -1,4 +1,4 @@
-#include 'monty.h'
+#include "monty.h"
 
 /**
  * sq_nop - nop function
@@ -57,3 +57,4 @@ int sq_isalpha(int c)
 	else
 		return (0);
 }
+
