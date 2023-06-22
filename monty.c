@@ -1,9 +1,9 @@
 #include "monty.h"
-super_var var_global;
+global_var var_global;
 /**
- * main - main function program
- * @ac: first argument
- * @av: operation file
+ * main - driver function for monty program
+ * @ac: int num of arguments
+ * @av: opcode file
  * Return: 0
  */
 int main(int ac, char **av)
@@ -17,7 +17,8 @@ int main(int ac, char **av)
 		exit(EXIT_FAILURE);
 	}
 
-	open_file(av[1], &stack);
-	release_list(stack);
+	read_file(av[1], &stack);
+    /* recordar liberar memorias */
+	free_dlistint(stack);
 	return (0);
 }
