@@ -1,4 +1,4 @@
-#include "monty.h"
+ #include "monty.h"
 
 /**
  * sq_sub - function to substitute
